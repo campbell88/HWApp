@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="HWAssignment.Models.UserDbContext-Web.config Connection String" description="HWAssignment.Models.UserDbContext Connection String used in web.config by the application to access the database." defaultValue="HWAssignment.Models.UserDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\home\\Documents\\Visual\ Studio\ 2015\\Projects\\HWAssignment\\HWAssignment\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HWAssignment.Models.UserDbContext']/@connectionString" />
+  </parameter>
+</parameters>
