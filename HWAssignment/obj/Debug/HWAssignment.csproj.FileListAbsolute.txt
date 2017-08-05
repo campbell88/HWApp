@@ -41,3 +41,4 @@ C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bi
 C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.SqlServer.dll
 C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.xml
 C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.SqlServer.xml
+C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\obj\Debug\HWAssignment.csprojResolveAssemblyReference.cache
