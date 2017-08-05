@@ -172,10 +172,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\RegUser\Register.cshtml" />
+    <Content Include="Views\RegUser\Login.cshtml" />
+    <Content Include="Views\RegUser\LoggedIn.cshtml" />
+    <Content Include="Views\RegUser\AdminReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\RegUser\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>

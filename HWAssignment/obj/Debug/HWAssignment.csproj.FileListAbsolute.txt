@@ -35,6 +35,9 @@ c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\bi
 c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\bin\System.Web.WebPages.Razor.xml
 c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\bin\Antlr3.Runtime.pdb
 c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\bin\Newtonsoft.Json.xml
-c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\obj\Debug\HWAssignment.csprojResolveAssemblyReference.cache
 c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\obj\Debug\HWAssignment.dll
 c:\users\home\documents\visual studio 2015\Projects\HWAssignment\HWAssignment\obj\Debug\HWAssignment.pdb
+C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.dll
+C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.SqlServer.dll
+C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.xml
+C:\Users\home\Documents\Visual Studio 2015\Projects\HWAssignment\HWAssignment\bin\EntityFramework.SqlServer.xml

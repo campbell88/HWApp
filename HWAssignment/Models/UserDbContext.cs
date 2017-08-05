@@ -8,7 +8,7 @@ namespace HWAssignment.Models
 {
     public class UserDbContext: DbContext
     {
-        public DbSet<User> userAccount { get;  set}
+        public DbSet<User> userAccount { get; set; }
 
 
     }

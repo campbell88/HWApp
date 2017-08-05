@@ -9,7 +9,7 @@ namespace HWAssignment.Controllers
     public class RegUserController : Controller
     {
         // GET: RegUser
-        public ActionResult Index()
+        public ActionResult AdminReport()
         {
             using (UserDbContext db = new UserDbContext())
             {
@@ -37,10 +37,11 @@ namespace HWAssignment.Controllers
 
                 }
                 ModelState.Clear();
-                ViewBag.Message= user.FirstName +", you are successfully registered.";
+                ViewBag.Message = user.FirstName + ", you are successfully registered.";
 
             }
             return View();
+        }
 
             public ActionResult Login()
         {
