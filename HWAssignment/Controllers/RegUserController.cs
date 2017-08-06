@@ -13,7 +13,8 @@ namespace HWAssignment.Controllers
         {
             using (helloworlddbEntities db = new helloworlddbEntities())
             {
-                return View(db.Users.ToList());
+               var sortedData = db.Users.OrderByDescending(u => u.RegisterDate);
+                return View(sortedData.ToList());
 
 
             }
@@ -32,18 +33,16 @@ namespace HWAssignment.Controllers
             {
                 using (helloworlddbEntities db = new helloworlddbEntities())
                 {
+                    user.RegisterDate = DateTime.Now;
                     db.Users.Add(user);
                     db.SaveChanges();
-
                 }
                 ModelState.Clear();
                 ViewBag.Message = user.FirstName + ", you are successfully registered.";
-
             }
             return View();
         }
-
-
+        
 
         public ActionResult Login()
         {
