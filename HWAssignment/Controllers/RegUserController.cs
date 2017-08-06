@@ -34,6 +34,7 @@ namespace HWAssignment.Controllers
                 using (helloworlddbEntities db = new helloworlddbEntities())
                 {
                     user.RegisterDate = DateTime.Now;
+                    user.Country = "US";
                     db.Users.Add(user);
                     db.SaveChanges();
                 }
