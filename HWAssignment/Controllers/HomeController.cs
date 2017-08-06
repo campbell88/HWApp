@@ -22,7 +22,7 @@ namespace HWAssignment.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "My Contact Info";
+            
 
             return View();
         }

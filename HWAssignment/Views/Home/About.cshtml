@@ -1,11 +1,62 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>Meet Shathar.</h2> 
+ 
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
 
-<p>Insert funny and smart fluff here</p>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
 
-<a href="https://linkedin.com/in/shatharcampbell/">LinkedIn</a>
-<br />
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
 
-<a href="https://github.com/campbell88">GitHub</a> 
+            li a.active {
+                background-color: #A3E4D7;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+    </style>
+    <h2 style="font-family:Verdana;">About me</h2>
+</head>
+
+
+<body>
+    <ul style="font-family:Verdana;">
+        <li>
+            <a class="active"
+               href="/Home/Index">Home</a>
+        </li>
+        <li><a href="/Home/About">About Me</a></li>
+        <li><a href="/Home/Contact">Contact</a></li>
+        <li><a href="/RegUser/Register">Register</a></li>
+        <li><a href="/RegUser/AdminReport">Admin Report</a></li>
+    </ul>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+        <p style="font-family:Verdana;">Spent a decade managing offices throughout several different industries. Found a passion in all things technology and ready to break into the tech industry. </p>
+
+        <a href="https://linkedin.com/in/shatharcampbell/">LinkedIn</a>
+        <br />
+        <a href="https://github.com/campbell88">GitHub</a>
+        <p style="font-family:Verdana;">Also want to prove to my mother that computers are not going to wipe out humanity.</p>
+</body>
