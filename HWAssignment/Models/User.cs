@@ -36,6 +36,7 @@ namespace HWAssignment.Models
         public string State { get; set; }
 
         [Required]
+        [StringLength(9)]
         public string Zip { get; set; }
 
         [Required]

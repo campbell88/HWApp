@@ -58,7 +58,9 @@ html {
 }
 
 body {
-  margin: 0;
+ background-image: url('http://wallpaper-gallery.net/images/coders-wallpapers/coders-wallpapers-2.jpg');
+    margin: 0;
+    
 }
 
 a:focus {
