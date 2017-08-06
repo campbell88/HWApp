@@ -37,12 +37,12 @@ namespace HWAssignment.Controllers
                     db.Users.Add(user);
                     db.SaveChanges();
                 }
-                ModelState.Clear();
-                ViewBag.Message = user.FirstName + ", you are successfully registered.";
+                //ModelState.Clear();
+                //ViewBag.Message = user.FirstName + ", you are successfully registered.";
             }
-            return View();
+            return RedirectToAction("Confirmation");
         }
-        
+
 
         public ActionResult Login()
         {
@@ -50,46 +50,50 @@ namespace HWAssignment.Controllers
 
         }
 
-        //[HttpPost]
-        //public ActionResult Login(User user)
-        //{
+        [HttpPost]
+        public ActionResult Login(User user)
+        {
 
-        //    using (UserDbContext db = new UserDbContext())
-        //    {
-        //        var userInfo = db.userAccount.Where(u => u.Email == user.Email && u.Password == user.Password).FirstOrDefault();
-        //        if (userInfo != null)
+            using (UserDbContext db = new UserDbContext())
+            {
+                var userInfo = db.userAccount.Where(u => u.Email == user.Email && u.Password == user.Password).FirstOrDefault();
+                if (userInfo != null)
 
-        //        {
-        //            Session["UserID"] = userInfo.UserID.ToString();
-        //            Session["Email"] = userInfo.Email.ToString();
-        //            return RedirectToAction("LoggedIn");
+                {
+                    Session["UserID"] = userInfo.UserID.ToString();
+                    Session["Email"] = userInfo.Email.ToString();
+                    return RedirectToAction("LoggedIn");
 
-        //        }
-        //        else
-        //        {
-        //            ModelState.AddModelError("", "E-mail and/or Password is incorrect");
-        //        }
-        //    }
-        //    return View();
-
-        //}
-
-        //public ActionResult LoggedIn()
-        //{
-        //    if (Session[ "Email"] != null)
-        //    {
-
-        //        return View();
-        //    }
-        //    else
-        //    {
-        //        return RedirectToAction("Login");
-        //    }
-
-
-        //}
+                }
+                else
+                {
+                    ModelState.AddModelError("", "E-mail and/or Password is incorrect");
+                }
+            }
+            return View();
 
         }
+
+        public ActionResult Confirmation()
+        {
+
+            ViewBag.Message = "you are successfully registered.";
+
+
+            //if (Session["Email"] != null)
+            //{
+
+            //    return View();
+            //}
+            //else
+            //{
+            //    return RedirectToAction("Login");
+            //}
+            return View();
+
+        }
+
+    }
 
     }
 

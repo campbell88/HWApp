@@ -211,7 +211,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\RegUser\Register.cshtml" />
     <Content Include="Views\RegUser\Login.cshtml" />
-    <Content Include="Views\RegUser\LoggedIn.cshtml" />
+    <Content Include="Views\RegUser\Confirmation.cshtml" />
     <Content Include="Views\RegUser\AdminReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
