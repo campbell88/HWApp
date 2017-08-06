@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
+  <parameter name="helloworlddbEntities-Web.config Connection String" description="helloworlddbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.helloworlddb.csdl|res://*/Models.helloworlddb.ssdl|res://*/Models.helloworlddb.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=youhadmeathelloworld.database.windows.net;initial catalog=helloworlddb;persist security info=True;user id=adminuser;password=Shoosh59;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\home\\Documents\\Visual\ Studio\ 2015\\Projects\\HWAssignment\\HWAssignment\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='helloworlddbEntities']/@connectionString" />
+  </parameter>
   <parameter name="HWAssignment.Models.UserDbContext-Web.config Connection String" description="HWAssignment.Models.UserDbContext Connection String used in web.config by the application to access the database." defaultValue="HWAssignment.Models.UserDbContext_ConnectionString" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\home\\Documents\\Visual\ Studio\ 2015\\Projects\\HWAssignment\\HWAssignment\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HWAssignment.Models.UserDbContext']/@connectionString" />
   </parameter>
